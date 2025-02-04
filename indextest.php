@@ -32,7 +32,7 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 			<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
-              <form class="login100-form validate-form flex-sb flex-w" method="POST" action="loginAction.php">
+				<form class="login100-form validate-form flex-sb flex-w">
 					<span class="login100-form-title p-b-53">
 						Sign In With
 					</span>
@@ -52,7 +52,7 @@
 							Username
 						</span>
 					</div>
-                    
+                    <form method="POST" action="loginAction.php">
 					<div class="wrap-input100 validate-input">
                             <label for="username" class="form-label">Email</label>
                             <input type="email" class="form-control" name="email" required>
@@ -71,10 +71,12 @@
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control" name="password" required>
 					</div>
-						<button type="submit" class="btn btn-primary w-100">
+                    <div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
 							Sign In
 						</button>
-                  
+					</div>
+                    </form>
 
 
 					<div class="w-full text-center p-t-55">
